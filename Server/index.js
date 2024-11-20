@@ -17,6 +17,11 @@ const io = new Server(server, {
 app.use(cors());
 app.use(express.json());
 
+
+app.get('/',(req,res)=>{
+  res.json({message:"Hello Om Here"})
+})
+
 const port = process.env.PORT || 3000;
 
 io.on('connection', (socket) => {
