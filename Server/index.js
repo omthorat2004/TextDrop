@@ -9,7 +9,7 @@ const server = createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://text-drop.vercel.app/',
+    origin: 'https://text-drop.vercel.app',
     methods: ['GET', 'POST'],
   },
 });
